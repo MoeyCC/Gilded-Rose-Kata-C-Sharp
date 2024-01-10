@@ -85,9 +85,9 @@
             }
         }
 
-        public override string ToString()
+        public string stringyfyItems(IEnumerable<Item> items)
         {
-            var output = "";
+            /* var output = "";
             for (var i = 0; i < Items.Count; i++)
             {
                 if (output.Length > 0)
@@ -96,7 +96,8 @@
                 }
                 output += Items[i].ToString();
             }
-            return output;
+            return output; */
+            return string.Join(", ", items);
         }
     }
     
